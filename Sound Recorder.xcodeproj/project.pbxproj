@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		17F501931A9F1CF5001066B4 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F501921A9F1CF5001066B4 /* PlaySoundsViewController.swift */; };
 		17F5019D1A9F2772001066B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CBC40F066E29F906E5A957C /* Main.storyboard */; };
-		17F501A01A9F29E7001066B4 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 17F5019F1A9F29E7001066B4 /* movie_quote.mp3 */; };
 		17F501A31A9F361C001066B4 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F501A21A9F361C001066B4 /* RecordedAudio.swift */; };
 		2CBC436826D07F90693DDCE0 /* Sound_RecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC4401934D971202BE8543 /* Sound_RecorderTests.swift */; };
 		2CBC4503FF4D42518B26D55C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBC4B7D26DB9B1626ABA3D3 /* AppDelegate.swift */; };
@@ -29,7 +28,6 @@
 
 /* Begin PBXFileReference section */
 		17F501921A9F1CF5001066B4 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaySoundsViewController.swift; path = Controllers/PlaySoundsViewController.swift; sourceTree = "<group>"; };
-		17F5019F1A9F29E7001066B4 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = Resources/movie_quote.mp3; sourceTree = "<group>"; };
 		17F501A21A9F361C001066B4 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordedAudio.swift; path = Model/RecordedAudio.swift; sourceTree = "<group>"; };
 		2CBC42A442CA166F817E9112 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2CBC4401934D971202BE8543 /* Sound_RecorderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound_RecorderTests.swift; sourceTree = "<group>"; };
@@ -73,7 +71,6 @@
 		17F5019E1A9F290B001066B4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				17F5019F1A9F29E7001066B4 /* movie_quote.mp3 */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -213,7 +210,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F501A01A9F29E7001066B4 /* movie_quote.mp3 in Resources */,
 				17F5019D1A9F2772001066B4 /* Main.storyboard in Resources */,
 				2CBC485E8AF96A6219638A95 /* Images.xcassets in Resources */,
 			);
