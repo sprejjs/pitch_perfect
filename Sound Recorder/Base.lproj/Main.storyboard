@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hOI-DI-31b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hOI-DI-31b">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -120,7 +120,6 @@
                                 </state>
                                 <connections>
                                     <action selector="playDartWaider:" destination="0n3-Yw-ZXO" eventType="touchUpInside" id="PRw-7I-uUT"/>
-                                    <action selector="playSlow:" destination="0n3-Yw-ZXO" eventType="touchUpInside" id="xM7-uI-YSt"/>
                                 </connections>
                             </button>
                         </subviews>
