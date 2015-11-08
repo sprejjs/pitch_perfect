@@ -185,6 +185,8 @@
 		2CBC4C9ECB732CD45FB85EDB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				ORGANIZATIONNAME = Spreys.com;
 			};
 			buildConfigurationList = 2CBC474D889D5EE344E83B32 /* Build configuration list for PBXProject "Sound Recorder" */;

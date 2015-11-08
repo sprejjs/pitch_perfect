@@ -17,7 +17,7 @@ class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate {
     var audioEngine: AVAudioEngine!
     
     override func viewDidLoad() {
-        self.audioPlayer = AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl, error: nil)
+        self.audioPlayer = try? AVAudioPlayer(contentsOfURL: receivedAudio.filePathUrl)
         self.audioPlayer.enableRate = true
         self.audioEngine = AVAudioEngine()
     }
@@ -50,19 +50,19 @@ class PlaySoundsViewController: UIViewController, AVAudioPlayerDelegate {
     func playAudioWithPitch(pitch: Float) {
         stopPlaying()
 
-        var pitchPlayer = AVAudioPlayerNode()
-        var timePitch = AVAudioUnitTimePitch()
+        let pitchPlayer = AVAudioPlayerNode()
+        let timePitch = AVAudioUnitTimePitch()
         timePitch.pitch = pitch
         
         audioEngine.attachNode(pitchPlayer)
         audioEngine.attachNode(timePitch)
         
-        let myAudioFile = AVAudioFile(forReading: receivedAudio.filePathUrl, error: nil)
+        let myAudioFile = try! AVAudioFile(forReading: receivedAudio.filePathUrl)
         audioEngine.connect(pitchPlayer, to: timePitch, format: myAudioFile.processingFormat)
         audioEngine.connect(timePitch, to: audioEngine.outputNode, format: myAudioFile.processingFormat)
         
         pitchPlayer.scheduleFile(myAudioFile, atTime: nil, completionHandler: nil)
-        audioEngine.startAndReturnError(nil)
+        try! audioEngine.start()
         
         pitchPlayer.play()
     }
